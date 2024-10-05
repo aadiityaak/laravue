@@ -1,8 +1,3 @@
-<script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
   <header class="bg-white shadow">
     <div class="max-w-7xl mx-auto flex items-center justify-between p-4">
@@ -10,7 +5,7 @@ import HelloWorld from './components/HelloWorld.vue'
 
       <nav class="relative flex space-x-4">
         <RouterLink to="/" class="text-gray-700 hover:text-indigo-600">Home</RouterLink>
-        <RouterLink to="/blog" class="text-gray-700 hover:text-indigo-600">Blog</RouterLink>
+        <RouterLink to="/posts" class="text-gray-700 hover:text-indigo-600">Blog</RouterLink>
 
         <!-- Menu Profile dengan Submenu -->
         <div class="relative group">
@@ -18,7 +13,7 @@ import HelloWorld from './components/HelloWorld.vue'
           <div
             class="absolute left-0 mt-0 w-48 bg-white border border-gray-300 rounded shadow-lg hidden group-hover:block transition-opacity duration-200 ease-in-out"
           >
-            <RouterLink to="/manage-posts" class="block px-4 py-2 text-gray-700 hover:bg-gray-200"
+            <RouterLink to="/posts" class="block px-4 py-2 text-gray-700 hover:bg-gray-200"
               >Manage Posts</RouterLink
             >
             <RouterLink to="/login" class="block px-4 py-2 text-gray-700 hover:bg-gray-200"
@@ -37,3 +32,7 @@ import HelloWorld from './components/HelloWorld.vue'
     <RouterView />
   </div>
 </template>
+
+<script setup>
+import { RouterLink, RouterView } from 'vue-router'
+</script>

@@ -46,9 +46,9 @@ export default {
     async fetchPosts() {
       try {
         const response = await axios.get('http://larapi.test/api/posts')
-        this.posts = response.data
+        this.posts = response
       } catch (error) {
-        this.errorMessage = error.response?.data.message || 'Failed to load posts.'
+        this.errorMessage = error.response?error.message || 'Failed to load posts.'
       } finally {
         this.loading = false
       }
