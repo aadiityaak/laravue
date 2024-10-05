@@ -5,7 +5,7 @@
 
       <nav class="relative flex space-x-4">
         <RouterLink to="/" class="text-gray-700 hover:text-indigo-600">Home</RouterLink>
-        <RouterLink to="/posts" class="text-gray-700 hover:text-indigo-600">Blog</RouterLink>
+        <RouterLink to="/artikel" class="text-gray-700 hover:text-indigo-600">Artikel</RouterLink>
 
         <!-- Menu Profile dengan Submenu -->
         <div class="relative group">

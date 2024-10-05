@@ -1,4 +1,5 @@
 <template>
+  <div v-if="loading" class="text-center">Loading...</div>
   <div>
     <h2 class="text-2xl font-bold mb-4">Create New Post</h2>
     <form @submit.prevent="createPost">

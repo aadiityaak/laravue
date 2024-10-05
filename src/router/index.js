@@ -8,6 +8,11 @@ const routes = [
     component: HomeView
   },
   {
+    path: '/artikel',
+    name: 'artikel',
+    component: () => import('../components/PostArtikel.vue')
+  },
+  {
     path: '/register',
     name: 'register',
     component: () => import('../components/RegisterForm.vue')

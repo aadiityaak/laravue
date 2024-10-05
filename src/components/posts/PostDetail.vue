@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2>{{ post.title }}</h2>
-    <p>{{ post.content }}</p>
+    <p>{{ post.body }}</p>
     <button @click="editPost">Edit Post</button>
   </div>
 </template>
